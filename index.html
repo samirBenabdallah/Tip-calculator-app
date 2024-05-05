@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/media.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="center-flex">
+    <img src="./images/logo.svg" alt="" />
+    <main>
+      <section>
+        <p>Bill</p>
+        <div class="input">
+          <img src="./images/icon-dollar.svg" alt="" />
+          <input type="number" placeholder="0" id="bill" />
+        </div>
+        <p>Select Tip %</p>
+        <article>
+          <button data-tip="5">5%</button>
+          <button data-tip="10">10%</button>
+          <button data-tip="15">15%</button>
+          <button data-tip="25">25%</button>
+          <button data-tip="50">50%</button>
+          <input type="number" placeholder="Custom" />
+        </article>
+        <p>Number of People</p>
+        <div class="input">
+          <img src="./images/icon-person.svg" alt="" />
+          <input type="number" placeholder="0" id="people" />
+        </div>
+      </section>
+      <aside>
+        <div class="line">
+          <div>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <h1 id="tipForPerson">$0.00</h1>
+        </div>
+        <div class="line">
+          <div>
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <h1 id="total">$0.00</h1>
+        </div>
+        <button class="off" id="submit">Reset</button>
+      </aside>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>
